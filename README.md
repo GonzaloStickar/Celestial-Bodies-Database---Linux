@@ -64,7 +64,7 @@ A) Connection refused
           2.4.1) Press "ESC"
           2.4.2) Press ":wq"
           2.4.3) Press "ENTER"
-        2.4.3) Explanation of added line:
+        2.4.3) Extra - Explanation of added line:
           host: Indicates that we are configuring an access rule for connections via TCP/IP. 
           all: Indicates that the rule applies to all databases. 
           all: Indicates that the rule applies to all users. 
@@ -85,16 +85,19 @@ B) Role of user does not exist in your psql server.
   Step by step:
   
     1) Copy and Paste this line in your terminal / console
-        psql -U postgres
+        1.1) Initialize psql
+          $ psql -U postgres
+        1.2) You can create a database:
+          CREATE DATABASE databasename;
     2) Copy and Paste this line in your terminal / console (your_password ( Generate a password that you will remember) )
       CREATE ROLE username WITH LOGIN PASSWORD 'your_password';
-    3) Create a database with:
-      psql --username=username --dbname=databasename
+    3) Connect to your database with:
+      $ psql --username=username --dbname=databasename
         Replace "username" with your username that you are using, or you will use.
         Replace "database" with your databasename that you are using, or you will use.
-    4) Extra (Not need to be done): Give all privileges to your "username"
+    4) Extra - Give all privileges to your "username"
       GRANT ALL PRIVILEGES ON DATABASE databasename TO username;
-    5) To exit psql commands, type in terminal / console
+    5) Extra - To exit psql, type in terminal / console
         \q
 
 
