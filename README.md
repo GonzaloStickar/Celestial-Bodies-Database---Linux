@@ -11,7 +11,7 @@
 
   Problems related with opening psql:
   
-  A) Connection refused
+  A) Connection refused.
   
     psql: error: connection to server at "<host_ip>", port "port" failed: Connection refused
     Is the server running on that host and accepting TCP/IP connections?
