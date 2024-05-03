@@ -2,7 +2,7 @@
   
     Install psql:
       $ sudo apt-get install psql
-    To open psql:
+    To Initialize psql ( Problems to initialize psql might probably be solved on solution B) ):
       psql --username=username --dbname=databasename
         Replace "username" with your username that you are using, or you will use.
         Replace "database" with your databasename that you are using, or you will use.
